@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	stages{
-		stage("hello1"){
+		stage("hello11"){
 			steps{
 				sh 'echo "ansible test2"'
 			}
