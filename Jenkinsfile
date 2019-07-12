@@ -1,7 +1,7 @@
 pipeline{
 	agent any
 	stages{
-		stage("ansible"){
+		stage("hello"){
 			steps{
 				sh 'echo "ansible test1"'
 			}
