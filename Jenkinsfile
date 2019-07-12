@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage("hello"){
 			steps{
-				sh 'echo "ansible test1"'
+				sh 'echo "ansible test2"'
 			}
 		}
 		stage("ansible"){
