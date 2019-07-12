@@ -1,0 +1,2 @@
+[controller]
+mx13483vm.fr.murex.com ansible_user=autoengine

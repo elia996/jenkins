@@ -3,9 +3,8 @@ pipeline{
 	stages{
 		stage("test"){
 			steps{
-				sh 'echo "test"'
+				ansiblePlaybook inventory: 'hosts.txt', playbook: 'myplaybook.yml'
 			}
 		}
-	
 	}
 }

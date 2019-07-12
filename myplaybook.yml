@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+          - debug:
+                  msg: "Hello I'm running on {{ansible_distribution}} {{ansible_distribution_version}}"
