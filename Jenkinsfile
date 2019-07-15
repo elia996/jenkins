@@ -16,5 +16,7 @@ pipeline{
 				ansiblePlaybook playbook: 'myplaybook.yml'
 			}
 		}
+		stage("run shellscript"){
+		sh './test.sh'
 	}
 }
