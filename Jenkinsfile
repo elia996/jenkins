@@ -17,6 +17,9 @@ pipeline{
 			}
 		}
 		stage("run shellscript"){
-		sh './test.sh'
+			steps{
+				sh './test.sh'
+			}
+		}
 	}
 }
