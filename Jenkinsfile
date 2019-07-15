@@ -3,7 +3,11 @@ pipeline{
 	stages{
 		stage("hello11"){
 			steps{
-				sh 'echo "ansible test2"'
+				script{
+					def rootDir = pwd()
+					def example = load "${rootDir}@script/common.groovy "
+					example.printmsg("test")
+				}
 			}
 		}
 		stage("ansible"){
